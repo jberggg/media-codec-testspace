@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html class="mdl-js">
+    <header>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            Media Codec Playground
+        </title>
+    </header>
+    <body>
+        <h1>
+            Media Codec Playground
+        </h1>
+
+        <p>Video with additional 'codecs' media type tag</p>
+        <div class="video-container"></div>
+            <video controls>
+                <source src="test-video.mp4" type='video/mp4; codecs="avc1.4d002a, mp4a.40.2"' />
+                video not supported
+            </video>
+        </div>
+
+        <p>Video <b>without</b> additional 'codecs' media type tag</p>
+        <div class="video-container"></div>
+            <video controls>
+                <source src="test-video.mp4" type='video/mp4' />
+                video not supported
+            </video>
+        </div>
+
+    </body>
+</html>
